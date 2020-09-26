@@ -5,7 +5,7 @@
     <GroupMemberContainer></GroupMemberContainer>
     <ServerDonation></ServerDonation>
     <DonationFlow></DonationFlow>
-    <DonationFlow></DonationFlow>
+    <ContributorsContainer></ContributorsContainer>
   </div>
 </template>
 
@@ -14,10 +14,11 @@ import Header from "./components/Header";
 import GroupMemberContainer from "./components/GroupMemberContainer";
 import ServerDonation from "./components/ServerDonation";
 import DonationFlow from "./components/DonationFlow";
+import ContributorsContainer from "@/components/ContributorsContainer";
 
 export default {
   name: 'app',
-  components: {DonationFlow, ServerDonation, GroupMemberContainer, Header}
+  components: {ContributorsContainer, DonationFlow, ServerDonation, GroupMemberContainer, Header}
 }
 
 </script>

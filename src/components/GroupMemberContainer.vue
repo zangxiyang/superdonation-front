@@ -44,6 +44,7 @@
         </div>
       </sd-card>
     </carousel>
+
     <el-dialog
         title="使用支付宝捐助"
         :visible.sync="dialogVisible"
