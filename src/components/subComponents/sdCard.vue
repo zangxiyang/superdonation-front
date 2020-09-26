@@ -59,17 +59,6 @@
                 dialogVisible: false
             }
         },
-        directives: {
-            randomBorderColor: {
-                inserted: function (el) {
-                    let colors = ['#ff5722', '#795548', '#9c27b0', '#ff9800', '#e91e63'];
-                    const randomNum = Math.ceil(Math.random() * 4)
-                    //取预制颜色并赋值
-                    el.setAttribute('style', 'border-color:' + colors[randomNum] + ';');
-
-                }
-            }
-        },
         mounted() {
             console.log("当前的name:"+this.name)
         },

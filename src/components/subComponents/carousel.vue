@@ -3,10 +3,10 @@
     <div>
         <div class="arrow">
             <span id="arrow-left" @click="arrowClick('left')"  :style="{opacity:hasLeft,cursor:cursorL}">
-                <IconFont icon="icon-fingerpointleft" style="font-size: 30px"/>
+                <IconFont icon="icon-fingerpointleft" :size="30"/>
             </span>
             <span id="arrow-right" @click="arrowClick('right')" :style="{opacity:hasRight,cursor:cursorR}">
-                <IconFont icon="icon-fingerpointright" style="font-size: 30px"/>
+                <IconFont icon="icon-fingerpointright" :size="30"/>
             </span>
 
         </div>
@@ -82,7 +82,6 @@
                 switch (arrowIndex) {
                     case 'left':
                         if (this.hasLeft === 1) this.flick.previous()
-
                         break;
                     case 'right':
                         if (this.hasRight === 1) this.flick.next()
